@@ -38,6 +38,7 @@ def play(songs)
     song_request = gets.strip
     binding.pry
     jukebox_response = validate_selection(song_request, songs)
+    binding.pry
     if jukebox_response
       valid = true
       puts jukebox_response
