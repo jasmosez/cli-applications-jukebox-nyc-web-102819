@@ -39,7 +39,7 @@ def play(songs)
     jukebox_response = validate_selection(song_request, songs)
     if jukebox_response
       valid = true
-      puts "jukebox_response"
+      puts jukebox_response
     end
   end
     
