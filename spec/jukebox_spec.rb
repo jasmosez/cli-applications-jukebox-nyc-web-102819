@@ -1,3 +1,4 @@
+require "pry"
 require_relative 'spec_helper'
 
 songs = [
@@ -32,6 +33,7 @@ describe "CLI Jukebox" do
         expect( $stdout ).to receive(:puts).with(/Please enter a song name or number:/)
         expect( $stdout ).to receive(:puts).with(/Phoenix - 1901/)
         expect( $stdout ).to_not receive(:puts).with(/Tokyo Police Club - Wait Up/)
+        binding.pry
         play(songs)
       end
 
