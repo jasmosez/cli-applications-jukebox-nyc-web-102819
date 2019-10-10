@@ -9,7 +9,7 @@ def help
 end
 
 def play_prompt
-  puts "Please enter a song name or number"
+  puts "Please enter a song name or number:"
 end
 
 def validate_selection(song_request, songs)
