@@ -32,6 +32,7 @@ end
 
 def play(songs)
   valid = false
+  jukebox_response = ""
   
   until valid == true
     play_prompt
